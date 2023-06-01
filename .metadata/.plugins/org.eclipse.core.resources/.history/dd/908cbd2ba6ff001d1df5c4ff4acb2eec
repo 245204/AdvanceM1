@@ -1,0 +1,32 @@
+package com.ust.rest;
+
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.stereotype.Component;
+
+@Component
+public class EnvirnomentVariables {
+
+
+public String getAppServerName() {
+		return appServerName;
+	}
+	public void setAppServerName(String appServerName) {
+		this.appServerName = appServerName;
+	}
+	public String getPortNumber() {
+		return portNumber;
+	}
+	public void setPortNumber(String portNumber) {
+		this.portNumber = portNumber;
+	}
+public EnvirnomentVariables(String appServerName, String portNumber) {
+		super();
+		this.appServerName = appServerName;
+		this.portNumber = portNumber;
+	}
+@Value("${server.application.name}")
+	private String appServerName;
+	@Value("${server.port}")
+	private String portNumber;
+
+}

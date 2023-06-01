@@ -1,0 +1,9 @@
+app.server.name=prodprofile
+app.server.detail=prod profile
+spring.data.mongodb.host=localhost
+spring.data.mongodb.port:27017
+spring.data.mongodb.database=ustspring.jpa.hibernate.ddl-auto=update
+spring.jpa.show-sql=true
+spring.mvc.pathmatch.matching-strategy= ANT_PATH_MATCHER
+spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.MySQLDialect
+management.endpoints.web.exposure.include=health,info,beans

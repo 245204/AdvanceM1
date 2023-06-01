@@ -1,0 +1,5 @@
+server.port=8090
+
+com.ust.rabbitmq.exchange=ust_exchange
+com.ust.rabbitmq.queue=ust_queue
+com.ust.rabbitmq.raoutingkey=ust_routingkey

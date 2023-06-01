@@ -1,0 +1,5 @@
+package com.awslambda;
+
+public class Hello {
+
+}

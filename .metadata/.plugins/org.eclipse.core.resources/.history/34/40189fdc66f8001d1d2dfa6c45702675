@@ -1,0 +1,12 @@
+package com.ust.rabbitmq.config;
+
+import org.springframework.context.annotation.Configuration;
+
+@Configuration
+public class MessagingConfig {
+public static final String QUEUE="ust_queue";
+public static final String EXCHANGE="ust_exchange";
+public static final String ROUTING="ust_routingKey";
+
+
+}

@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: billingservice
+server:
+ port: 0
+     #can run multiple instances and different port each time,which port connection is going
+eureka:
+  client:
+    register-with-eureka: true
+    #service should register with the registry 
+    fetch-registry: true
+    #it need to register as it needs to get from registryservice
+    service-url:
+       defaultZone: http://localhost:8761/eureka
+         #where registry is running
+instance:
+ hostname: localhost

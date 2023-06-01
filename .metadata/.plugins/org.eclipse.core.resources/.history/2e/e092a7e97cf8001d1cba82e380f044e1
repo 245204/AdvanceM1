@@ -1,0 +1,5 @@
+server.port=8090
+spring.rabbitmq.host=
+com.ust.rabbitmq.exchange=ust_exchange
+com.ust.rabbitmq.queue=ust_queue
+ust.rabbitmq.raoutingkey=ust_routingkey
