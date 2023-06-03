@@ -2,7 +2,7 @@ spring:
   application:
     name: billingservice
 server:
- port: 0
+ port: 8087
      #can run multiple instances and different port each time,which port connection is going
 eureka:
   client:

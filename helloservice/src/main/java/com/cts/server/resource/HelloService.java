@@ -9,10 +9,13 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequestMapping("/rest/service")
+
+/*A simple REST CONTROLLER*/
+
 public class HelloService {
 	
 	@Autowired
-	Environment environment;//reference to properties file
+	Environment environment;//reference to properties file not necessary its just used to the getProperty ist a class
 	//@Value("name")
 	//String strmessage;
 	

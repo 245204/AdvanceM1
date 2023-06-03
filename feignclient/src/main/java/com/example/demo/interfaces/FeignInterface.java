@@ -9,6 +9,14 @@ import org.springframework.web.bind.annotation.RequestMethod;
 
 import com.example.demo.model.Product;
 
+
+/*We give feignClient as annotation in the interface of feignclient
+ * we give value as the name in the application.properties-------
+ * url is the url of the other microservice where the connection and all the controller functions lies
+ * so here product-service is the requestmapping of controller
+ * 
+ * We give RequestMapping for all the methods ,method should be specific,we give the value as the endpoint and produces as the
+ * content it returns in body */
 @FeignClient(value = "feignclient", url = "http://localhost:7081/product-service")
 public interface FeignInterface {
 
