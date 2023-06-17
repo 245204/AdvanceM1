@@ -8,8 +8,8 @@ import org.springframework.security.config.annotation.web.configuration.WebSecur
 import org.springframework.security.crypto.password.NoOpPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
 
-@EnableWebSecurity
-public class EmpSecurityConfig extends WebSecurityConfigurerAdapter {
+@EnableWebSecurity //annotation for websecurity
+public class EmpSecurityConfig extends WebSecurityConfigurerAdapter { //custom security configuration
 	
 	@Override
 	protected void configure(AuthenticationManagerBuilder auth)throws Exception {//security manager uses the authenticationmanagerbuilder
